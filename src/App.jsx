@@ -18,7 +18,7 @@ import {
 } from "@/components/ui/accordion";
 import { Textarea } from "@/components/ui/textarea";
 import { Button } from "@/components/ui/button";
-import { useState } from "react";
+import { useState } from "preact/hooks";
 
 function App() {
   const [deviceName, setDeviceName] = useState("Slave One");
@@ -33,7 +33,7 @@ function App() {
     }, 2000);
   };
   return (
-    <Card className="w-full max-w-md shadow-lg">
+    <Card className="w-full max-w-md shadow-lg mx-auto">
       <CardHeader className="pb-0">
         <CardTitle>Pointing Devices Controller</CardTitle>
         <CardDescription>Configure your device settings</CardDescription>
