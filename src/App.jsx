@@ -20,7 +20,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { Button } from "@/components/ui/button";
 import { useState } from "preact/hooks";
 
-function App() {
+export function App() {
   const [deviceName, setDeviceName] = useState("Slave One");
   const [isSaving, setIsSaving] = useState(false);
   const handleInputChange = (event) => {
@@ -148,5 +148,3 @@ function RocketIcon(props) {
     </svg>
   );
 }
-
-export default App;
